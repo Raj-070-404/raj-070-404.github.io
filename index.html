@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trip Builder</title>
+  <title>Trip Builder Pro</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
 
-<h2>Trip Builder 🧭</h2>
+<h2>Trip Builder Pro 🧭</h2>
 
-<input id="start" placeholder="Start Location">
-<input id="end" placeholder="Destination">
-<button onclick="planTrip()">Plan Trip</button>
+<div class="controls">
+  <input id="start" placeholder="Start Location">
+  <input id="breakfast" placeholder="Breakfast Stop (Optional)">
+  <input id="scenic" placeholder="Scenic Stop (Optional)">
+  <input id="lunch" placeholder="Lunch Stop (Optional)">
+  <input id="end" placeholder="Destination">
+
+  <select id="mode">
+    <option value="driving">Car</option>
+    <option value="cycling">Bike</option>
+    <option value="walking">Walk</option>
+  </select>
+
+  <button onclick="planTrip()">Plan Trip</button>
+</div>
 
 <div id="map"></div>
 <p id="info"></p>
@@ -21,3 +33,4 @@
 
 </body>
 </html>
+
